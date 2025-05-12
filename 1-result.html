@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">    <title>🖐️ Haptik trifft auf KI 🤖</title>
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">    <title>Lernen mit KI</title>
           <script src="common.js" defer></script>
   </head>
   <body>
@@ -25,6 +25,7 @@
   <main>
     <h2>Sokratischer Dialog</h2>
 <p>Hier ist ein Prompt für Euch. Kopiert ihn in ein KI-Sprachmodell Eurer Wahl - und begebt Euch in eine gemeinsame Reflexion.</p>
+    <hr><p>
       <div id="resultContainer">
       <p id="resultText">Prompt wird geladen...</p>
     </div>
@@ -32,7 +33,7 @@
     <button id="copyButton">Text kopieren</button>
 
     <hr>
-
+</p>
 <p>
     <p><a href="index.html"><button>⬅ Zurück zur Übersicht</button></a></p>
     
@@ -46,7 +47,7 @@
       <script>
     document.addEventListener("DOMContentLoaded", function () {
       const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
-      const prompt = `Wir sind pädagogisch tätige Menschen und werden heute eine Exkursion in unterschiedliche Unternehmen machen, um uns zu KI in Bildung, Beruf und Gesellschaft zu informieren. Uns interessieren dabei die folgenden Aspekte: ${challenge}  Beginne einen sokratischen Dialog mit uns dazu. Stelle uns eine erste kluge, vertiefende Frage, die wir gemeinsam als Kleingruppe reflektieren können. Warte dann auf unsere Antwort. Erst danach stellst du die nächste Frage – offen, nachdenklich, anregend. Gib keine Antworten, sondern unterstütze uns dabei, durch deine Fragen eigene Einsichten zu entwickeln und basierend auf den geteilten Aspekten, die uns interessieren, die folgende Exkursion gut vorzubereiten. Wiederhole diesen Prozess, bis wir den Dialog beende. Das Ziel ist, dass wir unser Erkenntnisinteresse prägnant auf den Punkt bringen können.`;
+      const prompt = `Wir sind pädagogisch tätige Menschen und werden heute eine Exkursion in unterschiedliche Unternehmen machen, um uns zu KI in Bildung, Beruf und Gesellschaft zu informieren. Uns interessieren dabei die folgenden Aspekte: ${challenge} . Beginne einen sokratischen Dialog mit uns dazu. Stelle uns eine erste kluge, vertiefende Frage, die wir gemeinsam als Kleingruppe reflektieren können. Warte dann auf unsere Antwort. Erst danach stellst du die nächste Frage – offen, nachdenklich, anregend. Gib keine Antworten, sondern unterstütze uns dabei, durch deine Fragen eigene Einsichten zu entwickeln und basierend auf den geteilten Aspekten, die uns interessieren, die folgende Exkursion gut vorzubereiten. Wiederhole diesen Prozess, bis wir den Dialog beende. Das Ziel ist, dass wir unser Erkenntnisinteresse prägnant auf den Punkt bringen können.`;
 
       document.getElementById('resultText').textContent = prompt;
     });
