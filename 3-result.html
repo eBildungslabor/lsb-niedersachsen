@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">    <title>🖐️ Haptik trifft auf KI 🤖</title>
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">    <title>Lernen mit KI</title>
           <script src="common.js" defer></script>
   </head>
   <body>
@@ -24,12 +24,29 @@
 
   <main>
     <h2>Modellierung</h2>
-
+<p>Hier ist ein Prompt, den ihr Euch kopieren und in ein KI-Sprachmodell eingeben könnt, um Eure These weiter zu entwickeln.</p>
   </main>
 
 <footer>
   <p>Erstellt von Nele Hirsch <a href="https://ebildungslabor.de">(eBildungslabor)</a> für das LI Hamburg im Mai 2025 | Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a></p>
 </footer>
 
+
+       <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
+    const prompt = `Wir haben als Kleingruppe diese These zur Nutzung von KI im pädagogischen Kontext entwickelt: ${challenge} Wir möchten dich nun bitten, uns bei der Weiterentwicklung dieser These zu unterstützen: Bitte gehe dazu schrittweise vor:
+
+1. Nenne drei Argumente, die die These stützen könnten.
+2. Nenne drei Gegenargumente oder Einschränkungen.
+3. Gib je ein Fallbeispiel: eines, das die These bestätigt, und eines, das sie widerlegt.
+
+Am Ende stelle uns bitte eine reflektierende Rückfrage, wie wir selbst unsere These weiterentwickeln würden – und gib dann auch einen Vorschlag, wie du sie auf Grundlage der Diskussion modifizieren würdest.
+
+Nutze eine klare, prägnante und strukturierte Sprache.`;
+
+    document.getElementById('resultText').textContent = prompt;
+  });
+</script>
   </body>
 </html>
