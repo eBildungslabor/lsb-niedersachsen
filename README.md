@@ -1,2 +1,2 @@
-# lernen-mit-ki
-Erkundungen für das LI Hamburg
+# Digitalisierung in der Bildung
+Erkundungen mit Unterstützung von KI-Sprachmodellen für den Landessportbund Niedersachsen.
