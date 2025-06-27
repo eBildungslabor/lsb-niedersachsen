@@ -33,6 +33,7 @@
     <button id="copyButton">Text kopieren</button>
 
     <hr>
+    <p>Ohne Registrierung zugängliche KI-Sprachmodelle findet ihr via <a href="https://duck.ai">duck.ai</a></p>
 </p>
 <p>
     <p><a href="index.html"><button>⬅ Zurück zur Übersicht</button></a></p>
@@ -47,7 +48,7 @@
       <script>
     document.addEventListener("DOMContentLoaded", function () {
       const challenge = localStorage.getItem('challenge') || '[keine Herausforderung eingegeben]';
-      const prompt = `Wir sind pädagogisch tätige Menschen und suchen gerade nach Orientierung zu KI in der Bildung. Uns interessieren dabei die folgenden Aspekte: ${challenge} . Beginne einen sokratischen Dialog mit uns dazu. Stelle uns eine erste kluge, vertiefende Frage, die wir gemeinsam als Kleingruppe reflektieren können. Warte dann auf unsere Antwort. Erst danach stellst du die nächste Frage – offen, nachdenklich, anregend. Gib keine Antworten, sondern unterstütze uns dabei, durch deine Fragen eigene Einsichten zu entwickeln und basierend auf den geteilten Aspekten, die uns interessieren, Orientierung zum Thema KI in der Bildung zu finden. Wiederhole diesen Prozess, bis wir den Dialog beende. Das Ziel ist, dass wir unsere Orientierung prägnant auf den Punkt bringen können.`;
+      const prompt = `Wir sind pädagogisch tätige Menschen im Bereich des außerschulischen Sports und suchen gerade nach Orientierung zu Digitalisierung in der Bildung. Uns interessieren dabei die folgenden Aspekte: ${challenge} . Beginne einen sokratischen Dialog mit uns dazu. Stelle uns eine erste kluge, vertiefende Frage, die wir gemeinsam als Kleingruppe reflektieren können. Warte dann auf unsere Antwort. Erst danach stellst du die nächste Frage – offen, nachdenklich, anregend. Gib keine Antworten, sondern unterstütze uns dabei, durch deine Fragen eigene Einsichten zu entwickeln und basierend auf den geteilten Aspekten, die uns interessieren, Orientierung zum Thema Digitalisierung in der Bildung zu finden. Wiederhole diesen Prozess, bis wir den Dialog beende. Das Ziel ist, dass wir unsere Orientierung prägnant auf den Punkt bringen können.`;
 
       document.getElementById('resultText').textContent = prompt;
     });
